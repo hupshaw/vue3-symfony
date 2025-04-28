@@ -15,8 +15,6 @@ RUN mv composer.phar /usr/local/bin/composer
 RUN curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.alpine.sh' | bash && \
     apk add symfony-cli
 
-ENTRYPOINT []
-
 WORKDIR /var/www
 
 EXPOSE 8000

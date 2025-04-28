@@ -1,4 +1,4 @@
-This is the basic setup for the DSPolitical Take Home Project.
+This is the basic setup for the a Vue3 interface backed by a Symfony REST API.
 
 To setup your local instance, run `./setup.sh`. This command will build the local docker images, install php and npm dependencies, and start the containers.
 

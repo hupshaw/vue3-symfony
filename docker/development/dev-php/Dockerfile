@@ -20,6 +20,3 @@ ENTRYPOINT []
 WORKDIR /var/www
 
 EXPOSE 8000
-
-# Default command to keep the container running
-CMD ["ash"]

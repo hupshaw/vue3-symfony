@@ -21,6 +21,7 @@ class ApiClientService
         ];
     }
 
+    //Could be used to share config information with other Services
     public function getConfig(): array
     {
         return [

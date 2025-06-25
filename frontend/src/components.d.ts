@@ -8,8 +8,17 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    ChooseLine: typeof import('./components/lines/ChooseLine.vue')['default']
+    ChooseStation: typeof import('./components/stations/ChooseStation.vue')['default']
+    ChooseTrain: typeof import('./components/trains/NextTrain.vue')['default']
+    ForgotPassword: typeof import('./components/login/ForgotPassword.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    HomePage: typeof import('./components/HomePage.vue')['default']
+    Login: typeof import('./components/login/Login.vue')['default']
+    MultiFactorAuth: typeof import('./components/login/MultiFactorAuth.vue')['default']
+    NextTrain: typeof import('./components/trains/NextTrain.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ViewLines: typeof import('./components/ViewLines.vue')['default']
   }
 }

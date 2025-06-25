@@ -1,0 +1,13 @@
+framework:
+    rate_limiter:
+        # WMATA's limit is 10 calls/second and 50,000 calls per day.
+        # Structure taken from https://symfony.com/doc/current/rate_limiter.html
+        wmata_immediate_use:
+            # use 'sliding_window' if you prefer that policy
+            policy: 'fixed_window'
+            limit: 10
+            interval: '1 second'
+        wmata_daily_use:
+            policy: 'fixed_window'
+            limit: 50000
+            interval: '1 day'
